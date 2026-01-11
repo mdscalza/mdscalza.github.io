@@ -35,17 +35,21 @@
         .about-section { margin-top: 50px; padding: 20px; background: #252525; border-radius: 12px; border-left: 4px solid #bb86fc; }
         .about-section h2 { margin-top: 0; color: #bb86fc; }
         footer { text-align: center; margin-top: 40px; font-size: 0.85em; color: #777; padding-bottom: 20px; }
-    /* Letterboxd Button Styling */
-.lb-button {
-    background-color: #00e705; /* Letterboxd Green */
-    color: #121212 !important;
-    padding: 5px 15px;
-    border-radius: 20px;
-    transition: transform 0.2s;
+.letterboxd-body-btn {
+    background-color: #00e054; /* Letterboxd Green */
+    color: #14181c !important; /* Letterboxd Dark Gray */
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 224, 84, 0.3);
 }
-.lb-button:hover {
-    background-color: #40bcf4; /* Letterboxd Blue on hover */
-    transform: scale(1.05);
+
+.letterboxd-body-btn:hover {
+    background-color: #40bcf4; /* Swaps to Letterboxd Blue on hover */
+    transform: translateY(-2px);
 }
     </style>
 </head>
@@ -55,12 +59,18 @@
         <a href="index.html">Home</a>
         <a href="tv.html">TV</a>
         <a href="movies.html">Movies</a>
-        <a href="https://letterboxd.com/sclizzy/" target="_blank" class="lb-button">Letterboxd</a>
     </nav>
 
     <div class="content">
         <h1>Michael's Rankings</h1>
 
+<div style="text-align: center; margin: 30px 0;">
+    <p>Check out my full movie diary and reviews here:</p>
+    <a href="https://letterboxd.com/SCLIZZY/" target="_blank" class="letterboxd-body-btn">
+        Follow me on Letterboxd
+    </a>
+</div>
+        
         <div class="about-section">
             <h2>About Michael</h2>
             <p>I'm Michael Scalza, and this is my personal space for ranking the greatest media ever created. From cinematic masterpieces to binge-worthy TV, these are the picks that define my taste.</p>
