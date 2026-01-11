@@ -1,33 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael's Rankings</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f0f2f5; }
-        nav { background: #333; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        nav a:hover { color: #ffd700; }
-        .content { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #222; }
+        body { 
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #121212; 
+            color: #e0e0e0; 
+            line-height: 1.6;
+        }
+        nav { 
+            background: #1f1f1f; 
+            padding: 15px; 
+            border-radius: 12px; 
+            margin-bottom: 30px; 
+            text-align: center;
+            border: 1px solid #333;
+            position: sticky;
+            top: 10px;
+        }
+        nav a { color: #bb86fc; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #03dac6; }
+        .content { background: #1e1e1e; padding: 25px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h1 { text-align: center; color: #ffffff; }
+        .rank-item { display: flex; align-items: flex-start; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #333; }
+        .rank-item img { width: 80px; height: 120px; object-fit: cover; border-radius: 8px; margin-right: 20px; background-color: #333; }
+        .rank-text h3 { margin: 0 0 8px 0; color: #ffffff; }
+        .rank-text p { margin: 0; font-size: 0.95em; color: #b0b0b0; }
+        .about-section { margin-top: 50px; padding: 20px; background: #252525; border-radius: 12px; border-left: 4px solid #bb86fc; }
+        .about-section h2 { margin-top: 0; color: #bb86fc; }
+        footer { text-align: center; margin-top: 40px; font-size: 0.85em; color: #777; padding-bottom: 20px; }
     </style>
 </head>
 <body>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="tv.html">TV Shows</a>
+        <a href="tv.html">TV</a>
         <a href="movies.html">Movies</a>
     </nav>
 
-        <div class="content">
-        <h1>Best TV Shows Ever</h1>
-        <ol>
-            <li>The Godfather</li>
-            <li>Goodfellas</li>
-            <li>Before Sunrise</li>
-        </ol>
+    <div class="content">
+        <h1>Top 10 Movies</h1>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 1">
+            <div class="rank-text">
+                <h3>1. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 2">
+            <div class="rank-text">
+                <h3>2. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 3">
+            <div class="rank-text">
+                <h3>3. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 4">
+            <div class="rank-text">
+                <h3>4. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 5">
+            <div class="rank-text">
+                <h3>5. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 6">
+            <div class="rank-text">
+                <h3>6. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 7">
+            <div class="rank-text">
+                <h3>7. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 8">
+            <div class="rank-text">
+                <h3>8. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 9">
+            <div class="rank-text">
+                <h3>9. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
+        <div class="rank-item">
+            <img src="PASTE_IMAGE_URL_HERE" alt="Rank 10">
+            <div class="rank-text">
+                <h3>10. Title Here</h3>
+                <p>Add your review or description here.</p>
+            </div>
+        </div>
+
     </div>
 
+    <footer>
+        <p>&copy; 2026 Michael Scalza | <span id="last-updated"></span></p>
+    </footer>
+
+    <script>
+        // This script automatically shows when you last pushed changes
+        document.getElementById('last-updated').innerHTML = "Last updated: " + document.lastModified;
+    </script>
 
 </body>
 </html>
